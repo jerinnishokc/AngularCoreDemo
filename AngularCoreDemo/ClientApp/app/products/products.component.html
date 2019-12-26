@@ -1,0 +1,14 @@
+﻿<p>This is the list of products</p>
+
+<div *ngIf="products.length > 0; else elseblock">
+    <ul *ngFor="let product of products">
+        <li>{{product}}</li>
+    </ul>
+    
+</div>
+<ng-template #elseblock>
+    <p>No records found</p>
+</ng-template>
+<ul *ngFor="let product of fruits">
+    <li>{{product}}</li>
+</ul>
